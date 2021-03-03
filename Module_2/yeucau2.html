@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Furama Resort </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="">
+</head>
+<body>
+<form action="" method="post" onsubmit = "var result = IsInvalidEmail(this.email.value);return result;">
+    <div class="form">
+        <label for="username">Tên đăng nhập</label>
+        <input type="text" placeholder="Họ và tên" name="username" id="username" style="margin: 10px 0px 10px 50px">
+        <span id = "errorname"></span>
+        <label for="typeof customer" style="margin: 0px 300px">Loại Customer</label>
+        <select name="typeof customer" id="typeof customer" style="margin: 0px -257px 10px">
+            <option value="Diamon">Diamon</option>
+            <option value="Platinum">Platinum</option>
+            <option value="Gold">Golde</option>
+            <option value="Silver">Silver</option>
+            <option value="Member">Member</option>
+        </select><br />
+
+        <label for="cmnd">Chứng minh nhân dân</label>
+        <input type="text" placeholder="Số chứng minh nhân dân" name="cmnd" id="cmnd" style="margin: 0px 0px 10px 3px">
+        <label for="discount" style="margin: 0px 300px">Giảm giá</label>
+        <input type="text" placeholder="Giảm giá" name="discount" id="discount" style="margin: 0px -220px"><br />
+
+        <label for="bird day">Ngày sinh</label>
+        <input type="text" placeholder="Ngày sinh" name="bird day" id="bird day" style="margin: 0px 0px 10px 80px">
+        <label for="numberfollow" style="margin: 0px 300px">Số lượng đi kèm</label>
+        <input type="text" placeholder="Số lượng đi kèm" name="numberfollow" id="numberfollow" style="margin: 0px -267px"><br />
+
+        <label for="email">Email</label>
+        <input type="text" placeholder="Email" name="email" id="email" style="margin: 0px 10px 10px 107px">
+        <label for="rentdays" style="margin: 0px 290px">Số ngày thuê</label>
+        <input type="text" placeholder="Số ngày thuê" name="rentdays" id="rentdays" style="margin: 0px -233px"><br />
+
+        <label for="adress">Adress</label>
+        <input type="text" placeholder="Địa chỉ" name="adress" id="adress" style="margin: 0px 100px 10px"><br />
+
+        <label for="loaidichvu">Loại dịch vụ</label>
+        <label for="typeof rentrooms" style="margin: 0px 540px">Loại phòng thuê</label><br/>
+        <input type="radio" id="Villa" name="loaidichvu" value="Villa" style="margin: 0px 85px">
+        <label for="Villa" style="margin: 0px -85px">Villa</label>
+        <input type="radio" id="Vip" name="typeof rentrooms" value="Villa" style="margin: 0px 670px">
+        <label for="Villa" style="margin: 0px -665px">Vip</label><br />
+        <input type="radio" id="House" name="loaidichvu" value="House" style="margin: 0px 85px">
+        <label for="House" style="margin: 0px -85px">House</label>
+        <input type="radio" id="Business" name="typeof rentrooms" value="House" style="margin: 0px 660px">
+        <label for="House" style="margin: 0px -655px">Business</label><br />
+        <input type="radio" id="Room" name="loaidichvu" value="Room" style="margin: 0px 85px">
+        <label for="House" style="margin: 0px -85px">Room</label>
+        <input type="radio" id="Normal" name="typeof rentrooms" value="Room" style="margin: 0px 663px">
+        <label for="Room" style="margin: 0px -660px;">Normal</label><br />
+
+        <button style="margin: 0px 400px 10px" onclick="IsInvalidEmail()">Check information</button>
+    </div>
+
+</form>
+
+
+</body>
+</html>
